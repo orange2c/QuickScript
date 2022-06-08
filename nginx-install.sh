@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "本脚本用于安装配置nginx为文件服务器，并设置路径为/Ndownload"
-read -p '按下回车键开始'
+echo "功能: 安装nginx,并配置为文件服务器,配置其路径为/Ndownload"
+read -p '按下回车键开始 (按ctrl+c退出)'
 
 echo "1.安装nginx"
 apt-get install nginx -y

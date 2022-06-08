@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "本脚本用于在电脑中从零安装microchip的mpu的编译环境"
-echo "会在此路径下clone多个项目(几个G),请在合适路径下运行"
-echo "如果是国内环境,请先退出去手动更改apt下载源以加快下载速度"
-read -p '按下回车键开始(按ctrl+c退出)'
+echo "功能:安装at91系列mpu的编译环境"
+echo "1) 会使用 apt install 安装多个软件"
+echo "2) 会在当前路径下clone多个项目(几个G)"
+read -p '按下回车键开始 (按ctrl+c退出)'
 
 
 apt-get update

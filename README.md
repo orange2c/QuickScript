@@ -4,9 +4,9 @@
 所有脚本的使用方法都是  `sudo bash 脚本.sh`
 
 ## nginx-install.sh 
-ubuntu自动下载nginx，创建/Ndownload文件夹，配置此路径为文件服务器的脚本路径
+功能：安装nginx,并配置为文件服务器,配置其路径为/Ndownload
 
 ## env_at91.sh
-at91系列mpu的镜像编译环境下载
-
-会安装多个软件，以及clone多个项目
+功能:安装at91系列mpu的编译环境
+1) 会使用 apt install 安装多个软件
+2) 会在当前路径下clone多个项目(几个G)
