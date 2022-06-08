@@ -3,5 +3,6 @@
 
 
 ## nginx-install.sh 
-	ubuntu自动下载nginx，创建/Ndownload文件夹，配置此路径为文件服务器的脚本路径
+ubuntu自动下载nginx，创建/Ndownload文件夹，配置此路径为文件服务器的脚本路径
+使用方法：`sudo bash nginx-install.sh`
 

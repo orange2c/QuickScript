@@ -1,4 +1,4 @@
-
+#!/bin/bash
 echo "本脚本用于安装配置nginx为文件服务器，并设置路径为/Ndownload"
 read -p '按下回车键开始'
 
