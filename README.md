@@ -2,9 +2,9 @@
 # install_nginx.sh
 使用方法: `sudo bash install_nginx.sh`
 		
-	功能：安装配置文件服务器nginx
-	1. 使用apt安装nginx
-	2. 配置为文件服务器,路径为/Ndownload
+功能：安装配置文件服务器nginx
+1. 使用apt安装nginx
+2. 配置为文件服务器,路径为/Ndownload
 
 
 # install_at91
@@ -21,3 +21,16 @@
 示例：sudo bash cmd_down.sh 175.178.105.49
 
 功能：自创指令down的安装程序
+
+## down指令
+使用：`down 文件名`
+
+示例：down a.txt
+
+功能：将a.txt复制到/Ndownload文件夹下，并输出一串下载链接
+
+使用：`down 目录`
+
+示例：down work/
+
+功能：生成work/的压缩文件，复制到/Ndownload文件夹下，并输出一串下载链接
