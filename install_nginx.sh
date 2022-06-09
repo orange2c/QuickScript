@@ -7,6 +7,7 @@ apt-get install nginx -y
 
 echo "2.创建路径 /Ndownload "
 mkdir /Ndownload
+chmod 777 /Ndownload
 
 echo "3.创建配置文件"
 cat>/etc/nginx/conf.d/file_server.conf<<EOF

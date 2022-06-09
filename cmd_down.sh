@@ -2,8 +2,34 @@
 echo "功能:安装自定义指令down"
 
 
-echo "1.生成脚本"
+cat>/usr/bin/down<<EOF
+#!/bin/bash
 
+IP=$1
+filename=\$1
 
-echo '2.安装为命令'
+if [ -f "\$filename" ]
+then
+	echo '文件'
+	cp \${filename} /Ndownload
+fi
+if [ -d "\$filename" ]
+then
+	dir=\$filename
+	if [ "\${dir:0-1}" == "/" ]
+	then
+		tmp=\${dir%?}
+		dir=\$tmp
+	fi
+
+	zip -r "/Ndownload/\${dir}.zip" \${dir}
+fi
+
+echo "下载链接："
+echo "http://\${IP}/\${dir}.zip"
+
+EOF
+
+chmod 777 /usr/bin/down
+
 
