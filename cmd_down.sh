@@ -12,10 +12,15 @@ if [ -f "\$filename" ]
 then
 	echo '文件'
 	cp \${filename} /Ndownload
+	echo "下载链接："
+	echo "http://\${IP}/\${filename}.zip"
 fi
+
+
 if [ -d "\$filename" ]
 then
 	dir=\$filename
+
 	if [ "\${dir:0-1}" == "/" ]
 	then
 		tmp=\${dir%?}
@@ -23,10 +28,11 @@ then
 	fi
 
 	zip -r "/Ndownload/\${dir}.zip" \${dir}
+	echo "下载链接："
+	echo "http://\${IP}/\${dir}.zip"
 fi
 
-echo "下载链接："
-echo "http://\${IP}/\${dir}.zip"
+
 
 EOF
 
