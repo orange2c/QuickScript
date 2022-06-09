@@ -13,7 +13,7 @@ then
 	echo '文件'
 	cp \${filename} /Ndownload
 	echo "下载链接："
-	echo "http://\${IP}/\${filename}.zip"
+	echo "http://\${IP}/\${filename}"
 fi
 
 
