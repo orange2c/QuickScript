@@ -12,8 +12,7 @@ apt-get install net-tools ssh sed  binutils build-essential apt-utils ncurses-ba
 
 echo "2.安装依赖库"
 apt-get install diffstat libsdl1.2-dev libc6-i386 lib32stdc++6 lib32z1 -y
-apt-get install libssl1.0-dev libssl-dev  -y
-
+apt-get install libssl-dev  -y
 echo "3.安装交叉编译器"
 apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf -y
 export CROSS_COMPILE=arm-linux-gnueabi-
