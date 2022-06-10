@@ -7,8 +7,8 @@
 2. 配置为文件服务器,路径为/Ndownload
 
 
-# install_at91
-使用：`sudo bash install_at91.sh`
+# env_at91
+使用：`sudo bash env_at91.sh`
 
 功能：安装at91系列mpu的镜像编译环境
 1. 会使用 apt 安装多个软件，依赖库
